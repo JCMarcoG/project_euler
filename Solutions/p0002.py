@@ -1,4 +1,4 @@
-# Solution to Problem 0001
+# Solution to Problem 0002
 
 def solution():
     fib_list = [1, 2]
