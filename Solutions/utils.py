@@ -28,3 +28,7 @@ def primes_decompose(n):
     if n > 1:
         primes_factors.append(n)
     return primes_factors
+
+
+def lcm(x, y):
+    return x * y // math.gcd(x, y)
