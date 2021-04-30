@@ -30,5 +30,27 @@ def primes_decompose(n):
     return primes_factors
 
 
+def nth_prime(n):
+    '''return the nth number prime'''
+    primes = [2]
+    i = 3
+    while True:
+        p = 1
+        for j in primes:
+            if (i % j) == 0:
+                p = 0
+                break
+
+        if p == 1:
+            primes.append(i)
+
+        if len(primes) == n:
+            break
+
+        i += 1
+
+    return primes[-1]
+
+
 def lcm(x, y):
     return x * y // math.gcd(x, y)
