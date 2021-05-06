@@ -54,3 +54,26 @@ def nth_prime(n):
 
 def lcm(x, y):
     return x * y // math.gcd(x, y)
+
+
+def decompose_factors(n):
+    '''return a list of the factors of n'''
+
+    factors = []
+
+    for i in range(1, n + 1 // 2):
+        if n % i == 0:
+            factors.append(i)
+
+    return factors
+
+def decompose_factors_2(n):
+    '''return a list of the factors of sqrt(n)'''
+
+    factors = []
+
+    for i in range(1, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            factors.append(i)
+
+    return factors
