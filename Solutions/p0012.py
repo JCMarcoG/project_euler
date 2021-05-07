@@ -1,4 +1,4 @@
-# Solution to Problem 0010
+# Solution to Problem 0012
 
 from utils import decompose_factors_2
 
